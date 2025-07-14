@@ -1,0 +1,450 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.primary-color {
+  background-color: rgb(255, 84, 68);
+}
+
+.secondary-color {
+  background-color: rgb(170, 45, 182);
+}
+
+.tertiary-color {
+  background-color: rgb(30, 194, 164);
+}
+
+.quaternary-color {
+  background-color: rgb(39, 139, 224);
+}
+
+.shadow {
+  box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.3);
+}
+
+.shadow-2 {
+  box-shadow: 0px 3px 5px 2px rgba(50, 50, 50, 0.3);
+}
+
+/*---------------------------------------------------------
+ MENU
+ */
+
+.hamburger-trigger {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.logo-brand {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.menu-main {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  margin: 0;
+}
+
+.menu-main > li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.menu-main > li > a {
+  position: relative;
+  padding: 20px 0;
+  display: inline-block;
+}
+
+.has-sub-menu:hover .sub-menu {
+  display: flex;
+}
+
+.has-sub-menu i {
+  margin: 0;
+  font-size: 12px;
+}
+
+.sub-menu {
+  position: absolute;
+  display: none;
+  background: white;
+  list-style: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.sub-menu li {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.sub-menu li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-transform: none;
+}
+
+/*--------------------------------------------------------*/
+/*INTRO*/
+
+.intro {
+  background-color: rgb(246, 246, 246);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.inner {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.inner h1 {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.inner .sub-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.btn {
+  background-color: rgb(48, 47, 47);
+  color: white;
+  padding: 1rem 2rem;
+  border: 0;
+  display: inline-block;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+/*--------------------------------------------------------*/
+/*BOXES*/
+
+.boxes {
+  display: flex;
+  padding: 100px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.box {
+  text-align: center;
+  flex-basis: 25%;
+  flex-shrink: 0;
+  text-transform: uppercase;
+}
+
+.box .overlay {
+  margin: 0 15px;
+  border-radius: 5px;
+  color: white;
+  padding: 20px 0;
+}
+
+.box span {
+  display: block;
+  font-size: 40px;
+}
+
+/*--------------------------------------------------------*/
+/*DEMO-OPTIONS*/
+
+.demo-options {
+  background-color: rgb(246, 246, 246);
+  padding: 50px 0 100px;
+  text-align: center;
+}
+
+.demo-options > .overlay {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.btn-primary {
+  background-color: rgb(230, 225, 225);
+  cursor: pointer;
+  padding: 5px 15px;
+  border: 0;
+}
+
+.btn-primary.active {
+  background-color: black;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: rgb(45, 45, 45);
+  color: white;
+}
+
+.demo-options .title {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.demo-options .overlay-intro {
+  padding-bottom: 100px;
+}
+
+.options-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -70px;
+}
+
+.img-cont {
+  text-align: center;
+  flex-basis: 33.333%;
+  transition: transform 0.2s ease-out;
+  margin-bottom: 70px;
+}
+
+.img-cont .overlay {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.img-cont .title {
+  background-color: white;
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.img-cont img {
+  width: 100%;
+}
+
+.img-cont .overlay:hover {
+  border: 1px solid black;
+}
+
+/*--------------------------------------------------------*/
+/*FEATURES*/
+
+.features {
+  padding: 50px 0 100px;
+}
+
+.features-intro {
+  text-align: center;
+}
+
+.features-intro .title {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.features-intro .desc {
+  margin-bottom: 40px;
+}
+
+.features hr {
+  text-align: center;
+  width: 5%;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.features-wrap {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.features-list {
+  list-style-image: url(arrow.png);
+  flex-basis: 33.333%;
+  padding-right: 30px;
+  line-height: 3;
+  text-transform: uppercase;
+}
+
+/*--------------------------------------------------------*/
+/*SOCIAL*/
+
+.social {
+  background-color: #464646;
+  color: white;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.social .title {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+
+.icons-wrap {
+  font-size: 0.7em;
+}
+
+.icons-wrap a {
+  text-decoration: none;
+  color: white;
+}
+
+.icons-wrap a:hover {
+  color: rgb(45, 45, 45);
+}
+
+.icons-wrap a:not(:last-child) {
+  margin-right: 15px;
+}
+
+/*--------------------------------------------------------*/
+/*FOOTER*/
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+}
+
+footer .overlay {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.overlay p {
+  flex: 0 1 auto;
+  font-size: 12px;
+}
+
+/*--------------------------------------------------------*/
+
+@media (max-width: 425px) {
+  nav {
+    padding: 20px 0;
+  }
+
+  .menu-main {
+    display: none;
+  }
+
+  .hamburger-trigger {
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    background: none;
+    border: 0;
+  }
+
+  .inner {
+    flex-basis: 60%;
+  }
+
+  .boxes {
+    display: block;
+  }
+
+  .box {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .box .overlay {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .box:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  #main-buttons {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .btn-primary:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .demo-options {
+    padding: 50px 0;
+  }
+
+  .demo-options > .overlay {
+    width: 80%;
+  }
+
+  .demo-options .overlay-intro {
+    padding-bottom: 50px;
+  }
+
+  .options-wrap {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .img-cont {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .img-cont .overlay {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .features-intro .desc {
+    text-align: left;
+  }
+
+  .features-intro {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .features-list {
+    flex-basis: 50%;
+    padding-right: 0;
+  }
+
+  .features-list:first-child {
+    padding-right: 10px;
+  }
+
+  .features-list:last-child {
+    display: none;
+  }
+
+  .overlay p {
+    font-size: 10px;
+  }
+}
